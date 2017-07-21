@@ -1,0 +1,47 @@
+/* Global buttons css
+-------------------------------------------------------------- */
+button,
+.button {
+	display: inline-block;
+	border: 0;
+	border-radius: 0;//keep it no radius for ios reset
+	padding: $half-base-spacing;
+	font-size: $base-font-size;
+	color: $lightcolor;
+	background: $maincolor;
+	transition: background .25s ease-in-out, transform .25s ease-in-out;
+}
+
+button:hover,
+.button:hover { // Target the :hover pseudo-class
+	color: $lightcolor;
+	background: darken($maincolor, 5%);
+	transform: translateY(-1px);
+}
+
+button:focus,
+.button:focus { // Target the :focus pseudo-class
+	color: $lightcolor;
+	background: darken($maincolor, 5%);
+	transform: translateY(-1px);
+}
+
+button:active,
+.button:active { // Target the :active pseudo-class
+	color: $lightcolor;
+	background: $maincolor;
+	transform: translateY(1px);
+}
+
+.button__icon {
+	width: $base-spacing*1.25;
+	padding-right: $half-base-spacing;
+	vertical-align: -20%;
+}
+.button--circle {
+	border-radius: 50%;
+	line-height: 1;
+	.button__icon {
+		padding-right: 0;
+	}
+}

@@ -1,0 +1,26 @@
+body {
+	background: $darkcolor;
+	font-family: $customfont-1;
+	color: $lightcolor;
+}
+
+.container {
+	padding: 10px;
+	max-width: 1260px;
+	margin: 0px auto;
+	@media screen and (min-width: $mobile-small) {
+		padding: 20px;
+	}
+}
+
+.box {
+	margin-bottom: 40px;
+	background: #141414;
+	padding: 10px;
+	&--large {
+		padding: 10px;
+		@media screen and (min-width: $mobile-small) {
+			padding: 30px;
+		}
+	}
+}

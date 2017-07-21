@@ -1,0 +1,35 @@
+.header {
+	padding: 0;
+	height: 150px;
+	background: url('img/poudlard.jpg') $darkcolor;
+	-webkit-background-size: cover;
+	background-size: cover;
+	.header__title {
+		display: inline-block;
+		vertical-align: middle;
+		height: 150px;
+		line-height: 150px;
+		margin-left: 20px;
+		margin-bottom: 0;
+	}
+	.header__logo {
+		display: inline;
+		vertical-align: middle;
+		max-width: 170px;
+		height: auto;
+	}
+}
+.header__logo-link {
+	display: block;
+}
+.header__icon {
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin: 0 auto 10px;
+	color: $maincolor;
+}
+.header__img {
+	@include img__responsive();
+	margin: 0 auto $base-spacing;
+}
